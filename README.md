@@ -25,10 +25,27 @@ Assign a Glo user to a card(s)
 Add a comment to a card(s)
 
 ## Usage
-An example workflow to trigger moving a card in Glo when a PR is merged.
+An example workflow to trigger moving a card to the "Deployed" column on a Glo board when a PR is merged.
 
 ```
-{...}
+on: pull_request
+
+name: Glo actions
+
+jobs:
+  build:
+    name: Glo actions
+    runs-on: ubuntu-latest
+    steps:
+    - uses: Axosoft/glo-action-parse-links@v1
+      id: glo-parse
+
+    - uses: Axosoft/glo-action-move-card@v1
+      with:
+        authToken: ${{ secrets.GLO-PAT }}
+        cards: '${{ steps.glo-parse.outputs.cards }}'
+        column: 'Deployed'
+      id: glo-move
 ```
 
 Read more at the [GitKraken Support](https://support.gitkraken.com) site 
