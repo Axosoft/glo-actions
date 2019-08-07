@@ -3,6 +3,7 @@
 The set of GitHub Actions to automatically update your [Glo](https://www.gitkraken.com/glo) cards. Links to Glo cards from within a Pull Request description or commit message can trigger the following actions:
 
 - Move a Glo card(s) to any column on your board
+- Create a Glo card
 - Add a label to a Glo card(s)
 - Assign a user to a Glo card(s)
 - Add a comment to a Glo card(s)
@@ -11,6 +12,9 @@ The set of GitHub Actions to automatically update your [Glo](https://www.gitkrak
 
 [`Parse Glo Links`](https://github.com/Axosoft/glo-action-parse-links)
 Parse your Pull Request description for links to cards
+
+`Create Glo Card` (coming soon)
+Create a Glo card and optionally set the description, label, assignee and column
 
 [`Change Column`](https://github.com/Axosoft/glo-action-move-card)
 Change the column of a card(s)
