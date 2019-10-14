@@ -13,7 +13,7 @@ The set of GitHub Actions to automatically update your [Glo](https://www.gitkrak
 [`Parse Glo Links`](https://github.com/Axosoft/glo-action-parse-links)
 Parse your Pull Request description for links to cards
 
-`Create Glo Card` (coming soon)
+[`Create Glo Card`](https://github.com/Axosoft/glo-action-create-card)
 Create a Glo card and optionally set the description, label, assignee and column
 
 [`Change Column`](https://github.com/Axosoft/glo-action-move-card)
